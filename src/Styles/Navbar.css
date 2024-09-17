@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@font-face {
+  font-family: NeurialGrotesk;
+  src: url("../assets/fonts/NeurialGrotesk-Regular.otf");
+}
+:root {
+  --purple: #8d34ff;
+  --gray-purple: #e6d2ff;
+  --active-purple: #fefeff;
+  --font-family-h1: "Sansita", sans-serif;
+  --font-family-p: "Poppins", sans-serif;
+  --font-family-name: "Outfit", sans-serif;
+}
+h2 {
+  font-family: var(--font-family-h1);
+  font-weight: 700;
+  font-size: 28.33px;
+}
+.login-btn {
+  background-color: var(--gray-purple);
+  color: #8d34ff;
+  border: none;
+  border-radius: 8px;
+  width: 140px;
+  height: 61px;
+  font-weight: 800;
+  font-size: 20px;
+  font-family: NeurialGrotesk;
+}
+.sign-up-btn {
+  background-color: var(--purple);
+  color: #f5f5f5;
+  border: none;
+  border-radius: 8px;
+  width: 140px;
+  height: 61px;
+  font-weight: 800;
+  font-size: 20px;
+  font-family: NeurialGrotesk;
+}
