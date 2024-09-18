@@ -1,7 +1,8 @@
 import React from "react";
-import "../Styles/Navbar.css";
 import logo from "../assets/Group 9283.svg";
 import OffCanvas from "../lib/OffCanvas";
+import { Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
@@ -11,15 +12,20 @@ const Navbar = () => {
           <h2 className="pt-1 d-none d-md-block">Perfume House</h2>
         </div>
         <div className="d-md-flex d-none gap-4">
-          <button className="login-btn">Log in</button>
-          <button className="sign-up-btn">Sign Up</button>
+          <Link to="/auth/login">
+            <button className="login-btn">Log in</button>
+          </Link>
+          <Link to="/auth/signup">
+            <button className="sign-up-btn">Sign Up</button>
+          </Link>
         </div>
         <div className="d-md-none">
-        {['top'].map((placement, idx) => (
-        <OffCanvas key={idx} placement={placement} name={placement} />
-      ))}
+          {["top"].map((placement, idx) => (
+            <OffCanvas key={idx} placement={placement} name={placement} />
+          ))}
         </div>
       </nav>
+      <Outlet />
     </>
   );
 };

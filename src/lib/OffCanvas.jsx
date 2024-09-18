@@ -1,24 +1,28 @@
 import React from "react";
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
-import menu from '../assets/ci_hamburger-lg.png'
+import menu from "../assets/ci_hamburger-lg.png";
 import Offcanvas from "react-bootstrap/Offcanvas";
+import { Link } from "react-router-dom";
 const OffCanvas = ({ name, ...props }) => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
     <>
-<div onClick={handleShow}>
-<img src={menu} alt="" />
-</div>
+      <div onClick={handleShow}>
+        <img src={menu} alt="" />
+      </div>
       <Offcanvas show={show} onHide={handleClose} {...props}>
-        <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
-        </Offcanvas.Header>
         <Offcanvas.Body>
-          Some text as placeholder. In real life you can have the elements you
-          have chosen. Like, text, images, lists, etc.
+          <div className="d-flex flex-column container gap-3 mt-3">
+            <Link to="/auth/login">
+              <button className="login-btn w-100">Log in</button>
+            </Link>
+            <Link to="/auth/signup">
+              <button className="sign-up-btn w-100">Sign Up</button>
+            </Link>
+          </div>
         </Offcanvas.Body>
       </Offcanvas>
     </>
