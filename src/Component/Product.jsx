@@ -12,7 +12,7 @@ const Product = () => {
             product;
           return (
             <Card key={id} className="card-container">
-              <Card.Img variant="top" src={image} className="card-img" />
+              <Card.Img variant="top" src={image} className="card-img" alt="products" />
               <Card.Body>
                 <Card.Title className="card-title">{title}</Card.Title>
                 <div className="d-flex gap-1">

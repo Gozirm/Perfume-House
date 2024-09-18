@@ -13,8 +13,8 @@ const OffCanvas = ({ name, ...props }) => {
       <div onClick={handleShow}>
         <img src={menu} alt="" />
       </div>
-      <Offcanvas show={show} onHide={handleClose} {...props}>
-        <Offcanvas.Body>
+      <Offcanvas show={show} onHide={handleClose} {...props} >
+        <Offcanvas.Body >
           <div className="d-flex flex-column container gap-3 mt-3">
             <Link to="/auth/login">
               <button className="login-btn w-100">Log in</button>

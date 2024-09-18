@@ -1,14 +1,74 @@
 import React, { useEffect } from "react";
-
+import googleIcon from "/src/assets/🦆 icon _google_.svg";
+import arrow from "/src/assets/Line 13.svg";
+import arrowRight from "/src/assets/Line 16.svg";
+import logo from "/src/assets/Group 9283.svg";
+import { Link, Outlet } from "react-router-dom";
 const SignUp = () => {
   useEffect(() => {
     document.title = "Sign Up";
   });
   return (
     <>
-      <main className="sign-in-container">
-        <h1>Sign Up</h1>
+      <main className="sign-in-container  justify-content-center d-flex align-items-center ">
+        <div className="main-form">
+          <div className="d-lg-flex gap-2 d-none form-h2">
+            <img src={logo} alt="" />
+            <h2 className="logo-name">Perfume House</h2>
+          </div>
+          <div className="form-bg p-md-5 my-md-5 container">
+            <div className="d-flex gap-1 row">
+              <h3 className="form-h3">Wellcome Back</h3>
+              <p className="form-p">
+                Fill in your information to access your account.
+              </p>
+            </div>
+            <form className="d-flex row  align-items-center justify-content-center">
+              <div className="d-flex row mt-3">
+                <label htmlFor="">Email</label>
+                <input
+                  type="email"
+                  placeholder="Enter Email"
+                  className="input-details"
+                />
+              </div>
+              <div className="d-flex row my-3">
+                <label htmlFor="">Password</label>
+                <input
+                  type="password"
+                  placeholder="Enter Password"
+                  className="input-details"
+                />
+              </div>
+              <div className="d-flex justify-content-between align-items-center">
+                <div className="d-flex gap-2 align-items-center w-50">
+                  <input type="checkbox" className="mb-3" />
+                  <p className="p-checkbox">Remember Me</p>
+                </div>
+                <p>Forgot Password</p>
+              </div>
+            </form>
+            <div>
+              <Link className="text-decoration-none" to="/">
+                <button className="btn-form sign">Sign In</button>
+              </Link>
+              <div className="d-flex algin-items-center justify-content-center gap-2">
+                <img src={arrow} alt="" />
+                <p className="mt-3">or</p>
+                <img src={arrowRight} alt="" />
+              </div>
+              <button className="btn-form google">
+                <img src={googleIcon} alt="googleicon" className="me-2 mb-1" />
+                Continue with Google
+              </button>
+              <p className="last-form-p">
+                Don’t have an account? <Link className="text-decoration-none" to="/auth/login"><b>Sign Up</b></Link>
+              </p>
+            </div>
+          </div>
+        </div>
       </main>
+      <Outlet />
     </>
   );
 };

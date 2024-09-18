@@ -10,10 +10,10 @@ const Home = () => {
     <>
       <main className="container py-4">
         <section className="row">
-          <div className="col-lg-9">
+          <div className="col-lg-8">
             <Product />
           </div>
-          <div className="col-lg-3">
+          <div className="col-lg-4">
             <Cart />
           </div>
         </section>
