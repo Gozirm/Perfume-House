@@ -4,46 +4,26 @@ import arrow from "/src/assets/Line 13.svg";
 import arrowRight from "/src/assets/Line 16.svg";
 import logo from "/src/assets/Group 9283.svg";
 import { Link, Outlet } from "react-router-dom";
-const Login = () => {
+const SignUp = () => {
   useEffect(() => {
     document.title = "Login";
   });
   return (
     <>
-      <main className="sign-in-container  justify-content-center d-flex gap-4 align-items-center ">
+      <main className="sign-in-container  justify-content-center d-flex align-items-center ">
         <div className="main-form">
-          <div className="d-lg-flex d-none form-h2">
-            <Link className="text-decoration-none d-flex gap-2" to="/">
+          <div className="d-lg-flex gap-2 d-none form-h2">
             <img src={logo} alt="" />
             <h2 className="logo-name">Perfume House</h2>
-            </Link>
           </div>
           <div className="form-bg p-md-5 my-md-5 container">
             <div className="d-flex gap-1 row">
-              <h3 className="form-h3">Get Started</h3>
+              <h3 className="form-h3">Wellcome Back</h3>
               <p className="form-p">
-                Lets get started by filling out the information below
+                Fill in your information to access your account.
               </p>
             </div>
             <form className="d-flex row  align-items-center justify-content-center">
-              <div className="d-flex gap-5">
-                <div>
-                  <label>First Name</label>
-                  <input
-                    type="text"
-                    placeholder="Enter Name"
-                    className="input-names"
-                  />
-                </div>
-                <div>
-                  <label>Last Name</label>
-                  <input
-                    type="text"
-                    placeholder="Enter Name"
-                    className="input-names"
-                  />
-                </div>
-              </div>
               <div className="d-flex row mt-3">
                 <label htmlFor="">Email</label>
                 <input
@@ -60,24 +40,17 @@ const Login = () => {
                   className="input-details"
                 />
               </div>
-              <div className="d-flex row mt   -3">
-                <label htmlFor="">Confirm password</label>
-                <input
-                  type="password"
-                  placeholder="Confirm your password"
-                  className="input-details"
-                />
-              </div>
-              <div className="d-flex gap-3">
-                <input type="checkbox" className="checkbox" />
-                <p className="mt-3 p-checkbox">
-                  I agree to <b>Terms of Service</b> and <b>Privacy Policies</b>
-                </p>
+              <div className="d-flex justify-content-between align-items-center">
+                <div className="d-flex gap-2 align-items-center w-50">
+                  <input type="checkbox" className="mb-3" />
+                  <p className="p-checkbox">Remember Me</p>
+                </div>
+                <p>Forgot Password</p>
               </div>
             </form>
             <div>
               <Link className="text-decoration-none" to="/">
-                <button className="btn-form sign">Sign Up</button>
+                <button className="btn-form sign">Sign In</button>
               </Link>
               <div className="d-flex algin-items-center justify-content-center gap-2">
                 <img src={arrow} alt="" />
@@ -89,9 +62,9 @@ const Login = () => {
                 Continue with Google
               </button>
               <p className="last-form-p">
-                Already have an account?{" "}
-                <Link className="text-decoration-none" to="/auth/signUp">
-                  <b>Sign in</b>
+                Don’t have an account?{" "}
+                <Link className="text-decoration-none" to="/auth/login">
+                  <b>Sign Up</b>
                 </Link>
               </p>
             </div>
@@ -103,4 +76,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default SignUp;
