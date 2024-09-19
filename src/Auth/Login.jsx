@@ -11,8 +11,8 @@ const SignUp = () => {
   return (
     <>
       <main className="sign-in-container  justify-content-center d-flex align-items-center ">
-        <div className="main-form">
-          <div className="d-lg-flexd-none form-h2">
+        <div className="main-form p-5">
+          <div className="d-lg-flex d-none form-h2">
             <Link className="d-flex gap-2 text-decoration-none" to="/">
               <img src={logo} alt="" />
               <h2 className="logo-name">Perfume House</h2>

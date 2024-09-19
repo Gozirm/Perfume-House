@@ -11,7 +11,7 @@ const Login = () => {
   return (
     <>
       <main className="sign-in-container  justify-content-center d-flex gap-4 align-items-center ">
-        <div className="main-form">
+        <div className="main-form p-5">
           <div className="d-lg-flex d-none form-h2">
             <Link className="text-decoration-none d-flex gap-2" to="/">
               <img src={logo} alt="" />
