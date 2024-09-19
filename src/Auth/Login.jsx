@@ -12,9 +12,11 @@ const SignUp = () => {
     <>
       <main className="sign-in-container  justify-content-center d-flex align-items-center ">
         <div className="main-form">
-          <div className="d-lg-flex gap-2 d-none form-h2">
-            <img src={logo} alt="" />
-            <h2 className="logo-name">Perfume House</h2>
+          <div className="d-lg-flexd-none form-h2">
+            <Link className="d-flex gap-2 text-decoration-none" to="/">
+              <img src={logo} alt="" />
+              <h2 className="logo-name">Perfume House</h2>
+            </Link>
           </div>
           <div className="form-bg p-md-5 my-md-5 container">
             <div className="d-flex gap-1 row">
