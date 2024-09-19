@@ -56,8 +56,8 @@ h2 {
   width: auto;
 }
 .card-title {
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 600;
   font-family: "Poppins", sans-serif;
 }
 .add-to-cart-btn {
@@ -79,6 +79,7 @@ h2 {
   flex-direction: column;
   gap: 20px;
 }
+
 .main-form {
   position: relative;
 }
@@ -89,7 +90,7 @@ h2 {
 .form-h2 {
   position: absolute;
   right: 41rem;
-  top: 5rem;
+  top: 0;
   width: 40%;
 }
 .form-h3 {
@@ -154,6 +155,61 @@ b {
   text-align: center;
   margin-top: 1rem;
 }
+/* Cart */
+.cart-h1{
+  font-size: 28px;
+}
+.title-cart{
+  font-weight: 600;
+  font-size: 14px;
+}
+.cart-img{
+  width: 95px;
+  height: 110px;
+  border-radius: 3px;
+}
+.minus{
+  background-color: #716f6f;
+  padding: 7px 5px;
+  border-radius: 3px;
+}
+.plus{
+  background-color: #8d34ff;
+  padding: 5px;
+  border-radius: 3px;
+}
+.cart-d{
+  width: 179.69px;
+}
+.remove{
+  border: none;
+  background-color: #fff;
+  border: 1px solid red;
+  border-radius:3px;
+  /* padding: 10px; */
+  width: 87.33px;
+  height: 26.36px;
+  color: red;
+}
+.order{
+  border: none;
+  background-color: #8d34ff;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  width: 300px;
+  height: 44px;
+}
+.price{
+  font-weight: 700;
+}
+.price-title{
+  font-family: "Poppins", sans-serif;
+  color: #716f6f;
+  font-weight: 500;
+}
 
 @media (max-width: 765px) {
   .sign-in-container {
@@ -161,6 +217,9 @@ b {
   }
   .card-container {
     min-width: 100%;
+  }
+  .main-form{
+    width: 100%;
   }
   .card-title {
     font-size: 20px;
@@ -171,7 +230,8 @@ b {
     width: auto;
   }
   .form-bg {
-    width: 375px;
+    width: auto;
+    margin: auto;
   }
   .btn-form {
     font-size: 16px;

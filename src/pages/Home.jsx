@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       <main className="container py-4">
-        <section className="row">
+        <section className="row gy-5 gx-4">
           <div className="col-lg-8">
             <Product />
           </div>
