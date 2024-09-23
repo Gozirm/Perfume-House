@@ -32,7 +32,7 @@ const SignUp = () => {
           </div>
           <div className="form-bg p-md-5 my-md-5 mx-3 container">
             <div className="d-flex gap-1 row">
-              <h3 className="form-h3">Wellcome Back</h3>
+              <h3 className="form-h3">Welcome Back</h3>
               <p className="form-p">
                 Fill in your information to access your account.
               </p>
