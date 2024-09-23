@@ -113,8 +113,8 @@ const Login = () => {
             <div>
               <p className="last-form-p">
                 Already have an account?{" "}
-                <Link className="text-decoration-none" to="/auth/signUp">
-                  <b>Sign in</b>
+                <Link className="text-decoration-none" to="/auth/login">
+                  <b>Sign Up</b>
                 </Link>
               </p>
             </div>
